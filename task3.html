@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Continental Hotel Reservation Form</title>
+
+<style>
+
+body {
+background-color: #e0e0e0;
+font-family: "Times New Roman", serif;
+}
+
+h2 {
+color: red;
+text-align: center;
+font-family: Verdana, Arial, sans-serif;
+font-size: 22px;
+}
+
+table {
+width: 440px;
+margin: 0 auto;
+border: 2px solid gray;
+border-spacing: 2px;
+background-color: #c9e4ff;
+}
+
+td {
+border: 1px solid gray;
+padding: 5px;
+background-color: #c9e4ff;
+}
+
+td.label {
+width: 40%;
+text-align: right;
+font-weight: bold;
+font-size: 16px;
+padding-right: 8px;
+}
+
+td.center {
+text-align: center;
+}
+
+input[type="text"], input[type="email"] {
+width: 200px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Continental Hotel Reservation Form</h2>
+
+<form action="#" method="post">
+<table>
+  <tr>
+    <td class="label"><label for="name">Name</label></td>
+    <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
+  </tr>
+  <tr>
+    <td class="label"><label for="email">eMail</label></td>
+    <td><input type="email" id="email" name="email" value="info@continental.pk"></td>
+  </tr>
+  <tr>
+    <td class="label"><label for="mobile">Mobile No</label></td>
+    <td><input type="text" id="mobile" name="mobile" placeholder="Enter your cell number"></td>
+  </tr>
+  <tr>
+    <td class="label"><label for="arrival">Arrival Time</label></td>
+    <td><input type="text" id="arrival" name="arrival" placeholder="Enter your arrival time"></td>
+  </tr>
+  <tr>
+    <td class="label">Departure</td>
+    <td>
+      <input type="text" name="departure_date" size="12">
+      <input type="text" name="departure_time" size="12">
+    </td>
+  </tr>
+  <tr>
+    <td class="label">Room Type</td>
+    <td>
+      <input type="radio" id="single" name="room" value="single"><label for="single">Single</label>
+      <input type="radio" id="double" name="room" value="double"><label for="double">Double</label><br>
+      <input type="radio" id="suite" name="room" value="suite"><label for="suite">Presidential Suite</label>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">Preferences</td>
+    <td>
+      <input type="checkbox" id="nosmoking" name="pref" value="nosmoking"><label for="nosmoking">Non-Smoking</label><br>
+      <input type="checkbox" id="internet" name="pref" value="internet"><label for="internet">Internet</label><br>
+      <input type="checkbox" id="mattress" name="pref" value="mattress"><label for="mattress">Firm Mattress</label>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">Mode of Payment</td>
+    <td>
+      <input type="checkbox" id="cash" name="pay" value="cash"><label for="cash">Cash</label>
+      <input type="checkbox" id="check" name="pay" value="check"><label for="check">Check</label><br>
+      <input type="checkbox" id="credit" name="pay" value="credit"><label for="credit">Credit Card</label>
+      <select name="card">
+        <option>Select Card</option>
+        <option>Visa</option>
+        <option>MasterCard</option>
+        <option>American Express</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="center"><input type="submit" value="Send Data"></td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>
